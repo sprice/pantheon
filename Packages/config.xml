@@ -1,0 +1,13 @@
+<Sources>
+  <APTSource>
+    <Group>ubuntu-jaunty</Group>
+    <URL>http://us.archive.ubuntu.com/ubuntu</URL>
+    <Version>jaunty</Version>
+    <Component>main</Component>
+    <Component>multiverse</Component>
+    <Component>restricted</Component>
+    <Component>universe</Component>
+    <Arch>amd64</Arch>
+    <Arch>i386</Arch>
+  </APTSource>
+</Sources>

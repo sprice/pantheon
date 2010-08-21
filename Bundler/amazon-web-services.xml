@@ -1,0 +1,14 @@
+<Bundle name='amazon-web-services'>
+  <Package name='alien'/>
+  <Package name='dpkg-dev'/>
+  <Package name='debhelper'/>
+  <Package name='ec2-ami-tools'/>
+  <Package name='ec2-consistent-snapshot'/>
+  <Package name='make'/>
+  <Package name='rpm'/>
+  <Package name='runurl'/>
+  <Path name="/usr/local/bin/ec2-metadata"/>
+  <Service name='ec2-get-credentials'/>
+  <Service name='ec2-run-user-data'/>
+  <BoundPath name='/mnt/mysql/tmp' type='directory' owner='mysql' group='mysql' perms='0755'/>
+</Bundle>

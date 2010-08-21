@@ -1,9 +1,0 @@
-<Bundle name='hudson-service'>
-
-  <Group name='ubuntu'>
-    <Path name='/etc/init.d/hudson'/>
-  </Group>
-  
-  <Service name='hudson'/>
-  
-</Bundle>
