@@ -1,0 +1,43 @@
+<Bundle name ='tools'>
+  
+  <!-- Tools -->
+  <Package name='bzr'/>
+  <Package name='bzrtools'/>
+  <Package name='git-core'/>
+  <Package name='cvs'/>
+  <Package name='rsync'/>
+  <Package name='screen'/>
+  <Package name='subversion'/>
+  <Package name='unzip'/>
+  <Package name='vnstat'/>
+  
+  <Action name='vnstat_db_eth0'/>
+  
+  <!-- Debian/Ubuntu Only -->
+  <Group name='deb'>
+    <Package name='git-core'/>
+    <Service name='rsync'/>
+  </Group>
+
+  <!-- Debian Only -->
+  <Group name='debian'>
+    <Package name='info'/>
+  </Group>
+  
+  <!-- Ubuntu Only -->
+  <Group name='ubuntu'>
+    <Package name='fabric'/>
+    <Service name='vnstat'/>
+    
+    <!-- AWS Only -->
+    <Group name='amazon-web-services'>
+      <Action name='restart_apparmor'/>
+    </Group>
+  </Group>
+  
+  <!-- CentOS Only -->
+  <Group name='centos'>
+    <Package name='git'/>
+    <Path name='/etc/cron.d/vnstat' altsrc='/vnstat/cron'/>
+  </Group>
+</Bundle>
